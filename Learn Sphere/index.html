@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KnowLink - Knowledge Graph</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>KnowLink</h1>
+    <p>Search books, topics, papers, courses and legal reading sources.</p>
+    <div class="search">
+      <input id="searchInput" placeholder="Search a book, author, topic, ISBN...">
+      <button onclick="searchKnowledge()">Search</button>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Results</h2>
+      <div id="results" class="grid"></div>
+    </section>
+
+    <section>
+      <h2>Knowledge Graph</h2>
+      <p class="small">Click a related node to explore deeper.</p>
+      <div id="graph" class="graph"></div>
+    </section>
+
+    <section>
+      <h2>Learning Roadmap</h2>
+      <div id="roadmap" class="roadmap"></div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
